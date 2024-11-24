@@ -1,0 +1,181 @@
+.App {
+  background-color: white;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+/* home page css */
+/* Make the table more appealing */
+.table {
+  border-collapse: collapse;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa; /* Light gray hover effect */
+}
+
+.table-primary {
+  background-color: #d4e2fc; /* Soft blue for the header */
+  color: #212529;
+}
+
+/* Style for pagination and page size selectors */
+.form-label {
+  font-weight: 500;
+}
+
+select.form-select {
+  width: 150px;
+}
+
+/* Button styling */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+/* view css */
+
+/* location css */
+.container-box {
+  width: 70vw;
+  height: 80%;
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Scrollable list styling */
+.scrollable-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: calc(100% - 2rem); 
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px; 
+}
+
+.scrollable-list li {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scrollable-list li:last-child {
+  border-bottom: none;
+}
+
+.scrollable-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+h5 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .container-box {
+    width: 90vw;
+    height: 85%;
+    padding: 1rem;
+  }
+
+  .scrollable-list {
+    font-size: 0.9rem;
+    height: 200px; 
+  }
+}
